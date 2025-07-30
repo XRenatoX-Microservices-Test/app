@@ -1,0 +1,9 @@
+[submodule "client-ms"]
+	path = client-ms
+	url = https://github.com/XRenatoX-Microservices-Test/client-ms.git
+[submodule "product-ms"]
+	path = product-ms
+	url = https://github.com/XRenatoX-Microservices-Test/product-ms.git
+[submodule "gateway-ms"]
+	path = gateway-ms
+	url = https://github.com/XRenatoX-Microservices-Test/gateway-ms.git
