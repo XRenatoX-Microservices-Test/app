@@ -1,0 +1,25 @@
+version: '3'
+name: microservices-app
+services:
+  client-ms:
+    build:
+      context: ./client-ms
+      dockerfile: dockerfile
+    networks:
+      - microservices-network
+  product-ms:
+    build:
+      context: ./product-ms
+      dockerfile: dockerfile
+    networks:
+      - microservices-network
+  gateway-ms:
+    build:
+      context: ./gateway-ms
+      dockerfile: dockerfile
+    ports:
+      - "3000:3000"
+    networks:
+      - microservices-network
+networks:
+  microservices-network:
